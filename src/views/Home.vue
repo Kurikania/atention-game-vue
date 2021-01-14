@@ -3,7 +3,7 @@
     <div id="flip-list-demo" class="demo">
       <button v-on:click="shuffle">Перемешать</button>
       <button v-on:click="newGame">Новая игра</button>
-       <h2 v-if="cells[99][1] === true">Вы выиграли!</h2>
+       <h2 v-if="current === 100">Вы выиграли!</h2>
       <transition-group name="flip-list" tag="div" class="container">
         <div
           v-for="cell in cells"
